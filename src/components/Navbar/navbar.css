@@ -1,0 +1,170 @@
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+    background-color: rgb(36, 24, 80) !important;
+    padding: 0px 10px;
+}
+
+.navBarBody.active{
+    height: auto;
+}
+.navBarBody{
+    padding: 10px;
+    transition: all 10s;
+}
+
+.navBarHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    column-gap: 40px;
+}
+
+.navBarHeaderTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900 !important;
+    font-size: 23px !important;
+    text-align: center;
+    color: #25215B;
+    min-width: 20%;
+    max-width: 32%;
+}
+
+.css-19r6kue-MuiContainer-root {
+    padding: 0 !important;
+}
+
+.navBarLogoDiv {
+    display: flex !important;
+    align-items: center;
+}
+
+.menuItemsList {
+    align-items: right !important;
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    color: #fff !important;
+}
+
+
+.menuIconDiv{
+    display: none;
+}
+
+.mitsLogo{
+    width: 150px;
+    height: 150px;
+}
+
+@media screen and (max-width: 950px) and (min-width: 700px){
+    .mitsLogo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .navBarHeaderTitle {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: 900 !important;
+        font-size: 20px !important;
+        text-align: center;
+        color: #25215B;
+        min-width: 45%;
+        max-width: 30%;
+    }
+
+    .navBarHeader {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        padding: 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .mitsLogo {
+        width: 80px;
+        height: 80px;
+    }
+    .navBarLogoDiv {
+        display: grid !important;
+        justify-items: center;
+        align-items: center;
+        place-items: center;
+        position: absolute;
+        left: 30%;
+        top: 0%;
+    }
+
+    .navBarHeaderTitle {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: 900 !important;
+        font-size: 12.5px !important;
+        text-align: center;
+        color: #25215B;
+        min-width:45%;
+        max-width: 30%;
+    }
+
+    .navBarHeader {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        padding: 10px 5px;
+    }
+
+    .menuItemsList.active{
+        display: grid;
+        text-align: center !important;
+        justify-content: center;
+        align-items: center;
+        margin-top: -35px;
+    }
+
+    .menuItemsList {
+        display: none;
+    }
+    .menuIconDiv {
+        display: flex;
+        justify-self: center;
+        align-items: baseline;
+    }
+    .css-r6ewbb-MuiToolbar-root {
+        display: flex !important;
+    }
+    .menuIcon {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end !important;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.navItems{
+    font-size: 16px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.navItems.active,.navItems:hover{
+    color: rgb(255, 111, 0);
+    font-size: 16.5px;
+    border-bottom:2px solid rgb(255, 111, 0);
+}
+.navItems.inactive{
+    color: black;
+    border: none;
+    font-size: 16px;
+}
+.navItems::after{
+    border: 1px solid #000;
+}

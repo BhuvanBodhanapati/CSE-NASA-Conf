@@ -1,0 +1,56 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin: 5px 0;
+}
+
+.h4 {
+  margin: 10px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  text-transform: none !important;
+}
+
+.pagenotfountDiv{
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}

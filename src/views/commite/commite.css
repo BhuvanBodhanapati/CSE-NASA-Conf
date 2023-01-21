@@ -1,0 +1,35 @@
+.css-o4b71y-MuiAccordionSummary-content.Mui-expanded{
+    margin: 5px !important;
+}
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded{
+    min-height: 30px !important;
+}
+
+.commitePageDiv{
+    margin: 10px;
+    display: grid;
+    gap: 15px;
+}
+
+.accordionBody{
+    display: grid;
+    margin-left: 20px !important;
+}
+
+
+.accordionDiv{
+    border-radius: 10px !important;
+    margin: 0px !important;
+    box-shadow: 2px 3px 10px 0px rgba(36, 34, 34, 0.2) !important;
+}
+
+.accordionDiv:nth-child(odd){
+    background-color: #78ead3 !important;
+}
+
+@media only screen and (max-width: 700px){
+    .commitePageDiv{
+        margin: 5px;
+    }
+}
