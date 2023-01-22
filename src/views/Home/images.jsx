@@ -1,12 +1,10 @@
 import React from 'react';
-import { Paper, Typography, Button } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 import mits from "../../assets/mits.jpg";
 import mits2 from "../../assets/mits2.jpg";
 import mits3 from "../../assets/mits3.jpg";
 import mits4 from "../../assets/mits4.jpg";
 import mits5 from "../../assets/mits5.jpg";
-import { borderRadius } from '@mui/system';
 
 const Images = () => {
   return (

@@ -1,11 +1,7 @@
 import React from 'react'
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-// import profile from "../../assets/teacherprofile.jpg";
 import PageTitle from "../../components/pageTitle/pageTitle";
-import Avatar from "@mui/material/Avatar";
 import MailIcon from "@mui/icons-material/Mail";
 import CallIcon from "@mui/icons-material/Call";
 import './contactUs.css'

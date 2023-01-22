@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 import './footer.css'
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import YouTubeIcon from "@mui/icons-material/YouTube";
