@@ -22,7 +22,7 @@ const HomePageCard = () => {
         className="homePageCard homePageCardcolorPink"
       >
         <CardContent>
-          <Typography className="cardTitle">About Committee</Typography>
+          <Typography className="cardTitle">About NASA Committee</Typography>
           <Typography className='cardContent'>
             The National Conference on Recent Advancements in Computing, Communication & Societal Applications (NASA’ 23) will be organized by Madanapalle Institute of Technology & Science, Department of Computer Science & Engineering, Madanapalle, Andhra Pradesh, India during 19th to 20th, April 2023. <br/><br/>
             NASA’ 23 aims to offer a great opportunity to bring together Faculty, researchers and scholars around the globe as a great platform to deliver the latest innovative research results and the most recent developments and trends in different societal applications.

@@ -11,31 +11,31 @@
     width : 100%;
 }
 
-th{
-    font-size: 1.5em;
+.datesTable th{
+    font-size: 1em;
     padding : 10px;
     background-color: rgb(36, 24, 80);
     color : white;
 }
 
-td{
+.datesTable td{
     text-align: center;
     padding : 10px ;
-    font-size: 1.2em;
+    font-size: 0.9em;
     background-color: rgb(218, 212, 249);
 }
 
-th:first-of-type{
+.datesTable th:first-of-type{
     border-top-left-radius: 10px;
 }
-th:last-of-type{
+.datesTable th:last-of-type{
     border-top-right-radius: 10px;
 }
 
-tr:last-of-type td:first-of-type{
+.datesTable tr:last-of-type td:first-of-type{
     border-bottom-left-radius: 10px;
 }
-tr:last-of-type td:last-of-type{
+.datesTable tr:last-of-type td:last-of-type{
     border-bottom-right-radius: 10px;
 }
 

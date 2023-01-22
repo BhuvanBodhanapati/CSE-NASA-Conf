@@ -3,10 +3,7 @@ import Marquee from "react-fast-marquee";
 import './marquee.css'
 
 const Information = [
-    "Last date to resister",
-    "This is final call to all of you",
-    "This is final call to all of you",
-    "This is final call to all of you"
+    "Department of CSE, Madanapalle Institute of Technology and Science is Organizing Two days National Conference On “Recent Advancements in Computing, Communication & Societal Applications” (NASA’23) on 19.04.2023 & 20.04.2023"
 ]
 
 const MarqueeText = () => {

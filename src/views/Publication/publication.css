@@ -1,4 +1,10 @@
+.publicationDiv{
+    width : 70%;
+    margin : 0 auto;
+    padding : 20px;
+}
 .publicationBody{
+    min-height : 175px;
     display: grid;
     justify-content: center;
     justify-items: center;
@@ -7,36 +13,11 @@
     text-align: center;
 }
 
-.publicationDiv{
-    display: grid;
-    gap: 20px;
-    margin: 10px !important;
-}
-
-.publicationlogo{
-    width: 90px;
-    display: grid;
-    justify-content: center;
-}
-
-.publicationBody p{
-    font-size: 18px;
-    font-weight: 600;
-    padding-bottom: 10px;
-}
-
-.publicationBody span{
-    font-weight: 600;
-}
-
-.publicationBody a{
-    border-bottom: 1px solid rgb(255, 0, 0);
-    color: rgb(255, 0, 0);
-}
 
 
 @media only screen and (max-width: 700px){
-    .publicationBody{
-        padding: 0px 10px;
+    .publicationDiv{
+        width : 90%;
+        padding : 5px;
     }
 }

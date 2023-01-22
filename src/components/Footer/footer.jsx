@@ -18,22 +18,6 @@ const Footer = () => {
           <p>QUICK LINKS</p>
           <a
             target="_blank"
-            href={"http://182.76.43.238/login/index.php"}
-            className="footerLink"
-          >
-            <ArrowRightIcon />
-            <span>Moodle Login</span>
-          </a>
-          <a
-            target="_blank"
-            href={"http://159.65.141.127/home.jsp#"}
-            className="footerLink"
-          >
-            <ArrowRightIcon />
-            <span>GEMS</span>
-          </a>
-          <a
-            target="_blank"
             href={"https://careers.mits.ac.in/positionsoffered.html"}
             className="footerLink"
           >
@@ -69,14 +53,6 @@ const Footer = () => {
           </a>
           <a
             target="_blank"
-            href={"https://mits.ac.in/contact_page.html"}
-            className="footerLink"
-          >
-            <ArrowRightIcon />
-            <span>Contact Us</span>
-          </a>
-          <a
-            target="_blank"
             href={"https://mits.ac.in/courses.html"}
             className="footerLink"
           >
@@ -91,17 +67,9 @@ const Footer = () => {
             <ArrowRightIcon />
             <span>Admission</span>
           </a>
-          <a
-            target="_blank"
-            href={"https://mits.ac.in/anti-ragging.html"}
-            className="footerLink"
-          >
-            <ArrowRightIcon />
-            <span>Anti-Ragging Cell</span>
-          </a>
         </div>
         <div className="foortItem1">
-          <p>CONTACT US</p>
+          <p>Address</p>
           <label>
             Madanapalle Institute of Technology & Science <br />
             Post Box No: 14, Kadiri <br />

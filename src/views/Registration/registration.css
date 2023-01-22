@@ -1,0 +1,104 @@
+.registrationPage{
+    width : 70%;
+    margin : 0 auto;
+    padding : 20px;
+}
+
+.note{
+    width : 100%;
+    padding : 30px 50px;
+}
+
+.feeTitle, .paymentTitle{
+    margin-left : 50px;
+}
+
+.feeTable{
+    margin: 20px auto;
+}
+
+
+.feeTable th{
+    font-size: 1em;
+    padding : 10px;
+    background-color: rgb(36, 24, 80);
+    color : white;
+}
+
+.feeTable td{
+    text-align: center;
+    padding : 10px ;
+    font-size: 0.9em;
+    background-color: rgb(218, 212, 249);
+}
+
+.feeTable tr:first-of-type th:first-of-type{
+    background-color: white;
+}
+
+.feeTable tr:nth-of-type(2) th:first-of-type{
+    border-top-left-radius: 5px;
+}
+.feeTable tr:nth-of-type(3) th:first-of-type{
+    border-bottom-left-radius: 5px;
+}
+.feeTable tr:nth-of-type(1) th:nth-of-type(2){
+    border-top-left-radius: 5px;
+}
+.feeTable tr:nth-of-type(1) th:nth-of-type(4){
+    border-top-right-radius: 5px;
+}
+
+.feeTable tr:nth-of-type(3) td:nth-of-type(3){
+    border-bottom-right-radius: 5px;
+}
+
+
+.registerBtn{
+    font-size: 1.3em;
+    width : 250px;
+    /* height : 70px; */
+    text-align: center;
+    padding : 20px;
+    margin : 30px auto;
+    border-radius: 5px;
+    background-color: rgb(36, 24, 80);
+    color: white;
+}
+
+.registerBtn:hover{
+    background-color: rgb(255, 111, 0);
+    color: rgb(36, 24, 80);
+}
+
+@media only screen and (max-width: 700px){
+    .registrationPage{
+        width : 90%;
+        padding : 5px;
+    }
+    
+    .note{
+        padding : 5px;
+        margin: 10px 0 20px;
+    }
+        
+    .feeTitle, .paymentTitle{
+        margin-left : 8px;
+    }
+
+    .feeTable{
+        margin:10px 0 30px -9px;
+    }
+
+
+    .feeTable th{
+        font-size: 0.8em;
+        padding : 10px;
+    }
+
+    .feeTable td{
+        font-size: 0.7em;
+    }
+    
+
+}

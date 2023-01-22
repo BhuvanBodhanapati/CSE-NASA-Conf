@@ -13,7 +13,7 @@ import PageNotFount from "../src/views/pageNotFound";
 function App() {
 
   return (
-    <div>
+    <div className='appDiv'>
       <NavBar />
       <MarqueeText />
       <MyRoutes />

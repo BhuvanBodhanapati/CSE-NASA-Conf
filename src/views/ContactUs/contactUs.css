@@ -7,10 +7,10 @@
 .contactUsBody{
     display: grid;
     align-items: center;
-    justify-content: center;
-    justify-items: center;
     text-align: start;
-}
+    
+
+}   
 
 .contactUsCards{
     display: flex;
@@ -20,6 +20,10 @@
     gap: 20px;
 }
 
+.contactUsCard{
+    padding : 10px 20px;
+    box-shadow: 0 0 3px black;
+}
 
 .contactUsDetailsDiv{
     display: grid;
@@ -37,8 +41,6 @@
     .contactUsBody{
         display: grid;
         align-items: center;
-        justify-content: center;
-        justify-items: center;
         text-align: start;
     }
 }
