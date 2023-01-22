@@ -7,7 +7,7 @@
     height: auto;
 }
 .navBarBody{
-    padding: 10px;
+    padding: 5px;
     transition: all 10s;
 }
 
@@ -15,8 +15,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    column-gap : 50px;
     padding: 10px 0px;
-    column-gap: 40px;
 }
 
 .navBarHeaderTitle{
@@ -27,7 +27,7 @@
     font-size: 23px !important;
     text-align: center;
     color: #25215B;
-    min-width: 20%;
+    min-width: 50%;
     max-width: 32%;
 }
 
@@ -41,7 +41,6 @@
 }
 
 .menuItemsList {
-    align-items: right !important;
     display: flex;
     column-gap: 50px;
     justify-content: center;
@@ -51,18 +50,17 @@
 
 .menuIconDiv{
     display: none;
+    margin-left : 15px;
 }
 
-.mitsLogo{
-    width: 150px;
-    height: 150px;
+.titleLogo{
+    object-fit: cover;
+    width: 125px;
+    /* height: 125px; */
+    max-width : 20%;
 }
 
 @media screen and (max-width: 950px) and (min-width: 700px){
-    .mitsLogo {
-        width: 120px;
-        height: 120px;
-    }
 
     .navBarHeaderTitle {
         display: flex;
@@ -72,24 +70,19 @@
         font-size: 20px !important;
         text-align: center;
         color: #25215B;
-        min-width: 45%;
-        max-width: 30%;
     }
 
     .navBarHeader {
         display: flex;
         align-items: center;
-        column-gap: 20px;
+        justify-content:center;
+        column-gap : 0px;
         padding: 10px 5px;
     }
 }
 
 @media only screen and (max-width: 700px) {
     
-    .mitsLogo {
-        width: 80px;
-        height: 80px;
-    }
     .navBarLogoDiv {
         display: grid !important;
         justify-items: center;
@@ -101,21 +94,19 @@
     }
 
     .navBarHeaderTitle {
-        display: flex;
         justify-content: center;
         text-align: center;
         font-weight: 900 !important;
-        font-size: 12.5px !important;
+        font-size: 13.5px !important;
         text-align: center;
         color: #25215B;
-        min-width:45%;
-        max-width: 30%;
+        max-width:45%;
     }
 
     .navBarHeader {
         display: flex;
         align-items: center;
-        column-gap: 20px;
+        column-gap: 10px;
         padding: 10px 5px;
     }
 
@@ -125,11 +116,13 @@
         justify-content: center;
         align-items: center;
         margin-top: -35px;
+        padding-top: 5px;
     }
 
     .menuItemsList {
         display: none;
     }
+
     .menuIconDiv {
         display: flex;
         justify-self: center;
@@ -154,11 +147,13 @@
     justify-content: center;
     text-align: center;
     color: #fff;
+    padding : 5px ;
 }
 .navItems.active,.navItems:hover{
     color: rgb(255, 111, 0);
-    font-size: 16.5px;
-    border-bottom:2px solid rgb(255, 111, 0);
+    font-size: 18.5px;
+    padding : 0 ;
+    /* border-bottom:2px solid rgb(255, 111, 0); */
 }
 .navItems.inactive{
     color: black;

@@ -10,7 +10,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import logo from "../../assets/mitsLogo.jpeg";
-import azadi from "../../assets/azadi.jpeg";
+import csi from "../../assets/csiLogo.png";
 import { useState, useEffect } from "react";
 import './navbar.css'
 import { ApplicationConstant } from "../../constant/applicationConstant";
@@ -23,7 +23,7 @@ const menuList = [
     className: "navItems",
   },
   {
-    name: "Commite",
+    name: "Committee",
     path: `${ApplicationConstant.COMMITE_PAGE_PATH}`,
     className: "navItems",
   },
@@ -50,9 +50,11 @@ const menuList = [
 ];
 
 const NavBar = () => {
+
   useEffect(() => {
-    hadleNavItem();
+    handleNavItem();
   }, [])
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [menuItemsListOpen, setMenuItemsListOpen] = React.useState(false)
@@ -65,7 +67,7 @@ const NavBar = () => {
     setAnchorElNav(null);
   };
 
-  const hadleNavItem =(props)=>{
+  const handleNavItem = (props)=>{
      var sideMenu = document.querySelectorAll(".navItems");
      sideMenu.forEach((item,index) => {
        if (props == index){
@@ -92,14 +94,15 @@ const NavBar = () => {
     <div>
       <div className="navBarHeaderDiv">
         <div className="navBarHeader">
-          <img className="mitsLogo" src={logo}></img>
+          <img className="titleLogo" src={logo}></img>
           <Typography className="navBarHeaderTitle">
-            National Conference on Advances in Computer and Societal Application
-            2023
+            National Conference on Advancements in Computing, Communication & Societal Applications, 2023 <br/>
+            ( NASA' 23 )
           </Typography>
-          <img src={azadi} className="mitsLogo"></img>
+          <img src={csi} className="titleLogo"></img>
         </div>
       </div>
+
       <AppBar position="static" className="navBarBody" id="navBarBody">
         <Container maxWidth="xl">
             <div onClick={handleMenuItems} className="menuIconDiv">
@@ -118,10 +121,9 @@ const NavBar = () => {
               {menuList.map((item, index) => (
                 <Link
                   to={item.path}
-                  className=""
                   key={index}
                   className={item.className}
-                  onClick={() => hadleNavItem(index)}
+                  onClick={() => handleNavItem(index)}
                 >
                   {item.name}
                 </Link>

@@ -1,0 +1,55 @@
+.impDatesPage{
+    width : 50%;
+    margin : 0px auto;
+}
+
+.impDates{
+    margin: 20px 0;
+}
+
+.datesTable{
+    width : 100%;
+}
+
+th{
+    font-size: 1.5em;
+    padding : 10px;
+    background-color: rgb(36, 24, 80);
+    color : white;
+}
+
+td{
+    text-align: center;
+    padding : 10px ;
+    font-size: 1.2em;
+    background-color: rgb(218, 212, 249);
+}
+
+th:first-of-type{
+    border-top-left-radius: 10px;
+}
+th:last-of-type{
+    border-top-right-radius: 10px;
+}
+
+tr:last-of-type td:first-of-type{
+    border-bottom-left-radius: 10px;
+}
+tr:last-of-type td:last-of-type{
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .impDatesPage{
+        width : 90%;
+        margin : 0px auto;
+    }
+    th{
+        font-size: 1.2em;
+    }
+    td{
+        font-size: 1em;
+    }
+    
+    
+}

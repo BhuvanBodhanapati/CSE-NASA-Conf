@@ -7,29 +7,50 @@
 }
 
 .commitePageDiv{
-    margin: 10px;
     display: grid;
-    gap: 15px;
+    gap:10px;
+    width: 55%;
+    margin : 0 auto;
 }
 
 .accordionBody{
     display: grid;
-    margin-left: 20px !important;
+    margin-left: 35px !important;
+    margin-right : 10px;
+    row-gap: 5px;
 }
 
-
 .accordionDiv{
+    padding: 5px ;
     border-radius: 10px !important;
     margin: 0px !important;
     box-shadow: 2px 3px 10px 0px rgba(36, 34, 34, 0.2) !important;
+    background-image: linear-gradient(to right, rgba(105, 217, 232, 0), rgb(39, 166, 250));
 }
 
 .accordionDiv:nth-child(odd){
-    background-color: #78ead3 !important;
+    background-color: #67cdf9 !important;
+}
+
+.committeeTitle{
+    font-size: 15px;
+    font-weight: 600 !important;
+}
+
+.committeeMember{
+    display: flex;
+    column-gap: 10px;
 }
 
 @media only screen and (max-width: 700px){
     .commitePageDiv{
-        margin: 5px;
+        padding: 15px;
+        width: unset;
     }
+    
+.accordionBody{
+    margin-left: 5px !important;
+    margin-right : 10px;
+}
+
 }
