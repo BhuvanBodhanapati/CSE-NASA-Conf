@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts run build"
+    "build": "react-scripts build"
 },
   "eslintConfig": {
     "extends": [
