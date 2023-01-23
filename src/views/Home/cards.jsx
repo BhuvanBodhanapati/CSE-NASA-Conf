@@ -3,14 +3,50 @@ import { useState } from 'react';
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-
-
+import ArrowRightRoundedIcon from '@mui/icons-material/ArrowRightRounded';
+import ExpandLessRoundedIcon from '@mui/icons-material/ExpandLessRounded';
+import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
 const HomePageCard = () => {
-  const [read, setRead] = useState(false);
+  const [isRead, setIsRead] = useState(false);
 
   function changeRead() {
-    setRead(!read);
+    setIsRead(!isRead);
   }
+
+  const topics =[
+    "Big Data",
+    "Batteries",
+    "Data Mining",
+    "Computer Vision",
+    "Cloud Computing",
+    "Machine Learning",
+    "Power Electronics",
+    "Solar  Technology",
+    "Computer Networks",
+    "Unmanned Vehicles",
+    "Micro Mechatronics",
+    "Electrical Machines",
+    "Electrical Vehicles",
+    "Intelligent Control",
+    "Advanced Manufacturing",
+    "Mathematical Modelling",
+    "IoT and sensor networks",
+    "Artificial Intelligence",    
+    "Robotics and automation",
+    "Wireless Sensor Networks",
+    "Renewable Energy Systems",
+    "Mechatronics Engineering",
+    "High Voltage Engineering",
+    "Telecommunication Systems",
+    "Fiber-optic Communication",
+    "Blockchain and Informatics",
+    "Digital Communication Systems",
+    "Mechatronics in Energy Systems",
+    "Engineering applications supporting SDGs",
+    "Signal Modelling for Audio-Visual Communication",
+    "Fault Detection and Diagnosis in Mechatronics Systems",
+    "Electrical Energy Generation, Transmission and Distribution",
+  ]
  
   return (
     <div className="homePageCardDiv">
@@ -26,84 +62,51 @@ const HomePageCard = () => {
             The conference will feature talks from eminent personalities. The conference will provide an excellent forum for dissemination of original research results and innovative solutions on interdisciplinary approaches, frameworks, theories and standards used as innovation to help technology management.<br/><br/>
             The vision of NASA’ 23 is to promote foster communication among researchers and practitioners working in a wide variety in Engineering, Innovation, Technology, Management and Humanity.
             Potential number of participants gather at NASA’ 23 to present research results, share visions and ideas, obtain updates on latest technologies and expand professional and social networking. The conference will be held in Online Mode. The softcopy of the proceedings will be sent to the registered participants and hard copy of the certificates will be sent to the authors corresponding address. <br/><br/>
-            <strong>Topics of interest for submission include, but are not only limited to  </strong>
-                    <ul>
-                      • Electrical Energy Generation, Transmission and Distribution <br/>
-                      • Renewable Energy Systems <br/>
-                      • Solar  Technology <br/>
-                      • Electrical Machines <br/>
-                      • Electrical Vehicles <br/>
-                      • Power Electronics <br/>
-                      • Batteries <br/>
-                      • Computer Vision  <br/>
-                      • Artificial Intelligence <br/>
-                      • Computer Networks <br/>
-                      • Cloud Computing <br/>
-                      • Big Data <br/>
-                      • Blockchain and Informatics <br/>
-                      • Signal Modelling for Audio-Visual Communication <br/>
-                      • Machine Learning <br/>
-                      • Telecommunication Systems <br/>
-                      • Data Mining <br/>
-                      • Digital Communication Systems <br/>
-                      • Fiber-optic Communication <br/>
-                      • Mechatronics Engineering <br/>
-                      • Advanced Manufacturing <br/>
-                      • Intelligent Control <br/>
-                      • Micro Mechatronics <br/>
-                      • Mathematical Modelling <br/>
-                      • Mechatronics in Energy Systems <br/>
-                      • Fault Detection and Diagnosis in Mechatronics Systems <br/>
-                      • IoT and sensor networks <br/>
-                      • Robotics and automation <br/>
-                      • Engineering applications supporting SDGs <br/>
-                      • Wireless Sensor Networks <br/>
-                      • Unmanned Vehicles <br/>
-                      • High Voltage Engineering <br/>
-                    </ul>
-            {/* {
-              read 
-                ? <div className='topics'>
+            
+            {/* <strong>Topics of interest for submission include, but are not only limited to  </strong><br/> */}
+            {/* <ul className='topics'>
+              {
+                topics.map( topic => {
+                  return (
+                    <div className='listItem'>
+                      <ArrowRightRoundedIcon className='listIcon'/>
+                      <li>{topic}</li><br/>
+                    </div>
+                  )
+                })
+              }
+            </ul> */}
+            {
+              isRead 
+                ? (
+                    <div className=''>
                     <strong>Topics of interest for submission include, but are not only limited to  </strong>
-                    <ul>
-                      • Electrical Energy Generation, Transmission and Distribution<br/>
-                      • Renewable Energy Systems<br/>
-                      • Solar  Technology<br/>
-                      • Electrical Machines<br/>
-                      • Electrical Vehicles<br/>
-                      • Power Electronics<br/>
-                      • Batteries<br/>
-                      • Computer Vision<br/>
-                      • Artificial Intelligence<br/>
-                      • Computer Networks<br/>
-                      • Cloud Computing<br/>
-                      • Big Data<br/>
-                      • Blockchain and Informatics<br/>
-                      • Signal Modelling for Audio-Visual Communication<br/>
-                      • Machine Learning<br/>
-                      • Telecommunication Systems<br/>
-                      • Data Mining<br/>
-                      • Digital Communication Systems<br/>
-                      • Fiber-optic Communication<br/>
-                      • Mechatronics Engineering<br/>
-                      • Advanced Manufacturing<br/>
-                      • Intelligent Control<br/>
-                      • Micro Mechatronics<br/>
-                      • Mathematical Modelling<br/>
-                      • Mechatronics in Energy Systems<br/>
-                      • Fault Detection and Diagnosis in Mechatronics Systems<br/>
-                      • IoT and sensor networks<br/>
-                      • Robotics and automation<br/>
-                      • Engineering applications supporting SDGs<br/>
-                      • Wireless Sensor Networks<br/>
-                      • Unmanned Vehicles<br/>
-                      • High Voltage Engineering<br/>
-                    </ul>
-                    <strong><a className='changeRead' onClick={changeRead()}>Read less...</a></strong>
-                  </div>
-                : <strong><a className='changeRead' onClick={changeRead()}>Read more about        topics...</a></strong>
+                      <ul className='topics'>
+                        {
+                          topics.map( topic => {
+                            return (
+                              <div className='listItem'>
+                                <ArrowRightRoundedIcon className='listIcon'/>
+                                <li>{topic}</li><br/>
+                              </div>
+                            )
+                          })
+                        }
+                      </ul>
+                      <strong><a className='changeRead' onClick={changeRead}>Read less
+                      <ExpandLessRoundedIcon className='readIcon' /></a></strong>
+                    </div>
+                  )
+                : (
+                    <strong>
+                      <a className='changeRead' onClick={changeRead}>Read more about  topics &nbsp;
+                      <ExpandMoreRoundedIcon className='readIcon' />
+                      </a>
+                      
+                    </strong>
+                  )
             }
-             */}
+            
             
           </Typography>
         </CardContent>

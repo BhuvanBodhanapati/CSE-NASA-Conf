@@ -42,8 +42,30 @@
     text-align: justify;
 }
 
-ul br{
-    display: none;
+.topics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.topics li{
+    display: inline;
+    
+}
+.listItem{
+    padding-left : 50px;
+    width : 50%;
+
+}
+
+.listItem li{
+    font-size: 1em;
+ }
+.listItem .listIcon{
+    margin-top : 5px;
+    font-size: 15px;
 }
 
 .homePageCardcolorBule{
@@ -57,6 +79,13 @@ ul br{
 }
 .changeRead{
     color : blue;
+}
+.changeRead:hover{
+    cursor: pointer;
+}
+
+.readIcon{
+    margin : 0 0 -5px;
 }
 
 @media only screen and (max-width: 700px){
@@ -74,12 +103,10 @@ ul br{
     .homePageCard{
         padding : 0;
     }
+    .listItem{
+        padding-left : 0px;
+        width : 100%;
     
-    ul br{
-        display: unset;
     }
-    ul{
-        text-align: start;
-    }
-
+    
 }
