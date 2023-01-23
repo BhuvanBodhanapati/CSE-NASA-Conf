@@ -96,7 +96,7 @@ const NavBar = () => {
         <div className="navBarHeader">
           <img className="titleLogo" src={logo}></img>
           <Typography className="navBarHeaderTitle">
-            National Conference on Advancements in Computing, Communication & Societal Applications, 2023 <br/>
+            National Conference on Recent Advancements in Computing, Communication & Societal Applications, 2023 <br/>
             ( NASA' 23 )
           </Typography>
           <img src={csi} className="titleLogo"></img>

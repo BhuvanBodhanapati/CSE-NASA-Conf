@@ -24,40 +24,43 @@
 }
 
 
-.foortItem {
+.footItem {
     display: grid;
     justify-content: center;
     align-items: center;
     color: #fff !important;
 }
-.foortItem1{
+.footItem1{
     display: grid;
     row-gap: 5px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    text-align: center;
+    margin: 0 auto;
+    /* background-color: red; */
 }
 
-.foortItem p{
+.footItem p{
     text-decoration: underline;
     font-weight: 600;
     padding-left: 10px;
 }
 
-.foortItem1 p{
+.footItem1 p{
     text-decoration: underline;
     font-weight: 600;
 }
-.foortItem1 label{
+.footItem1 label{
     font-size: 14px;
     line-height: 20px;
 }
-.foortItem1 p{
+.footItem1 p{
     font-size: 16px;
     font-weight: 550;
 }
 
 .footerLink span:hover{
-    border-bottom: 2px solid rgb(27, 170, 1);
-    color: rgb(27, 170, 1);
+    border-bottom: 2px solid rgb(180, 3, 3);
+    color: rgb(180, 3, 3);
     font-size: 14.5px;
     transition: all 20ms;
 }
@@ -68,8 +71,8 @@
     column-gap: 5px;
 }
 .footerLink1 i:hover{
-    border-bottom: 2px solid rgb(27, 170, 1);
-    color: rgb(27, 170, 1);
+    border-bottom: 2px solid rgb(180, 3, 3);
+    color: rgb(180, 3, 3);
     transition: all 20ms;
 }
 
@@ -80,20 +83,22 @@
     margin-left: -10px;
 }
 .footerLink1:hover{
-    color: rgb(27, 170, 1) !important;
+    color: rgb(180, 3, 3)!important;
 }
 
 
 .footerLink:hover{
-    color: rgb(27, 170, 1) !important;
+    color: rgb(180, 3, 3)!important;
 }
 
-.foortItem a{
+.footItem a{
     font-size: 14px;
     color: #fff !important;
 }
-.foortItem1 a{
+.footItem1 a{
     color: #fff !important;
+    text-align: center;
+    margin : 15px auto 0;
 }
 
 .footerDivider{
@@ -101,39 +106,39 @@
     margin: 10px 20%;
 }
 
-.foorterSMIDiv{
+.footerSMIDiv{
     display: flex;
     column-gap: 10px;
     align-items: center;
     justify-content: center;
 }
 
-.foorterSMIDiv p{
+.footerSMIDiv p{
     font-size: 16px;
     font-weight: 600;
 }
 
-.foorterIcons{
+.footerIcons{
     display: flex;
     column-gap: 10px;
 }
 
-.foorterSMI svg{
+.footerSMI svg{
     color: rgb(255, 255, 255) !important;
 }
 
-.foortermitsLogo{
+.footermitsLogo{
     display: grid;
     place-content: center;
 }
-.foortermitsLogo img{
+.footermitsLogo img{
     width: 100px;
     border-radius: 20px;
 }
 
 
 @media only screen and (max-width: 700px){
-    .foortItem1 {
+    .footItem1 {
         display: grid ;
         justify-content: center;
         align-items: center;

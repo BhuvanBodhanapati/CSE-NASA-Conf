@@ -7,6 +7,7 @@
 .note{
     width : 100%;
     padding : 30px 50px;
+    text-align: justify;
 }
 
 .feeTitle, .paymentTitle{
@@ -14,20 +15,20 @@
 }
 
 .feeTable{
-    margin: 20px auto;
+    width : 90%;
+    margin: 40px auto;
 }
-
 
 .feeTable th{
     font-size: 1em;
-    padding : 10px;
+    padding : 20px;
     background-color: rgb(36, 24, 80);
     color : white;
 }
 
 .feeTable td{
     text-align: center;
-    padding : 10px ;
+    padding : 20px ;
     font-size: 0.9em;
     background-color: rgb(218, 212, 249);
 }
@@ -60,7 +61,7 @@
     /* height : 70px; */
     text-align: center;
     padding : 20px;
-    margin : 30px auto;
+    margin : 40px auto;
     border-radius: 5px;
     background-color: rgb(36, 24, 80);
     color: white;
@@ -80,6 +81,7 @@
     .note{
         padding : 5px;
         margin: 10px 0 20px;
+        
     }
         
     .feeTitle, .paymentTitle{
@@ -87,17 +89,18 @@
     }
 
     .feeTable{
-        margin:10px 0 30px -9px;
+        margin:30px 0 30px -19px;
     }
 
 
     .feeTable th{
         font-size: 0.8em;
-        padding : 10px;
+        padding : 15px;
     }
 
     .feeTable td{
         font-size: 0.7em;
+        padding : 15px
     }
     
 

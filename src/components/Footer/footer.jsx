@@ -1,7 +1,6 @@
 import React from 'react'
 import './footer.css'
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import PlaceIcon from '@mui/icons-material/Place';import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -13,7 +12,7 @@ const Footer = () => {
   return (
     <div className="footerBody">
       <div className="footerDiv">
-        <div className="foortItem">
+        {/* <div className="foortItem">
           <p>QUICK LINKS</p>
           <a
             target="_blank"
@@ -39,8 +38,8 @@ const Footer = () => {
             <ArrowRightIcon />
             <span>Gallery</span>
           </a>
-        </div>
-        <div className="foortItem">
+        </div> */}
+        {/* <div className="foortItem">
           <p>MITS</p>
           <a
             target="_blank"
@@ -66,9 +65,9 @@ const Footer = () => {
             <ArrowRightIcon />
             <span>Admission</span>
           </a>
-        </div>
-        <div className="foortItem1">
-          <p>Address</p>
+        </div> */}
+        <div className="footItem1">
+          <p>MITS&nbsp; College&nbsp; Address</p>
           <label>
             Madanapalle Institute of Technology & Science <br />
             Post Box No: 14, Kadiri <br />
@@ -83,47 +82,47 @@ const Footer = () => {
           <a
             target="_blank"
             href={
-              "https://www.google.com/maps/place/Madanapalle+institute+of+technology+and+Science/@13.6396971,78.4857839,14.44z/data=!4m5!3m4!1s0x3bb2677c83886ad7:0xad73159e2bddda33"
+              "https://goo.gl/maps/gxLV6tEDSaKRSYPK9"
             }
             className="footerLink1"
           >
-            <ArrowRightIcon />
-            <i> Find us in map</i>
+            <PlaceIcon   />
+            <i> Find us on map</i>
           </a>
         </div>
       </div>
       <div className="footerDivider"></div>
-      <div className="foorterSMIDiv">
+      <div className="footerSMIDiv">
         <p>Connect MITS @</p>
-        <div className="foorterIcons">
-          <a href="https://twitter.com/MITS_College" className="foorterSMI">
+        <div className="footerIcons">
+          <a href="https://twitter.com/MITS_College" className="footerSMI">
             <TwitterIcon />
           </a>
           <a
             target="_blank"
             href="https://www.instagram.com/mits_mpl/?hl=en"
-            className="foorterSMI"
+            className="footerSMI"
           >
             <InstagramIcon />
           </a>
           <a
             target="_blank"
             href="https://www.youtube.com/c/MadanapalleInstituteofTechnologyScience"
-            className="foorterSMI"
+            className="footerSMI"
           >
             <YouTubeIcon />
           </a>
           <a
             target="_blank"
             href="https://www.linkedin.com/school/madanapalle-institute-of-technology-&-science/"
-            className="foorterSMI"
+            className="footerSMI"
           >
             <LinkedInIcon />
           </a>
           <a
             target="_blank"
             href="https://www.facebook.com/MITSCOLLEGEMPL"
-            className="foorterSMI"
+            className="footerSMI"
           >
             <FacebookIcon />
           </a>
